@@ -1,0 +1,81 @@
+body {
+    font-family: monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.team-section, .contact-section {
+    margin: 2rem 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.updates-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.updates-link:hover {
+    text-decoration: underline;
+}
+
+.home-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.update-entry {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.update-entry:last-child {
+    border-bottom: none;
+}
+
+.update-entry h2 {
+    margin-bottom: 1rem;
+}
+
+.update-entry p {
+    line-height: 1.8;
+}
