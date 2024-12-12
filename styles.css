@@ -101,5 +101,9 @@ footer {
 @media (max-width: 768px) {
     .video-container {
         max-width: 100%; /* Takes full width on mobile */
+        margin-left: 0;  /* Remove horizontal margins on mobile */
+        margin-right: 0;
+        /* Keep vertical margins if desired */
+        margin: 2rem 0;  /* Alternative one-line solution */
     }
 }
