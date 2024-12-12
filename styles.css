@@ -80,13 +80,24 @@ footer {
     line-height: 1.8;
 }
 
+/* In styles.css */
+.updates-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-content {
+    padding: 0 1rem;
+}
+
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Larger size on desktop */
-    margin: 2rem auto; /* Centers the container */
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
+    margin: 2rem 0;
 }
 
 .video-container iframe {
@@ -99,11 +110,14 @@ footer {
 
 /* For mobile devices */
 @media (max-width: 768px) {
-    .video-container {
-        max-width: 100%; /* Takes full width on mobile */
-        margin-left: 0;  /* Remove horizontal margins on mobile */
-        margin-right: 0;
-        /* Keep vertical margins if desired */
-        margin: 2rem 0;  /* Alternative one-line solution */
+    .updates-section {
+        width: 100%;
+        padding: 0;
     }
+    
+    .video-container {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
 }
