@@ -31,6 +31,20 @@
         a {
             color: var(--text-color);
         }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +72,7 @@
                 Our team includes PhDs and engineers from Stanford, University of Toronto, CMU, Figure, AMD, GM, Tencent, and more. 
                 <br>
                 <br>
-                If you’re interested in investing, you can view our progress, design and deck <a href="https://forms.gle/tg8t9XNASMBbJsYU6">here</a>.
+                If you're interested in investing, you can view our progress, design and deck <a href="https://forms.gle/tg8t9XNASMBbJsYU6">here</a>.
                 <br>
                 <br>
                 To get in touch, email us at <a href="mailto:hello@syncereai.com">hello@syncereai.com</a> or book a call <a href="https://calendly.com/aaronhao-tan-utoronto/lets-chat">here</a>.
@@ -79,10 +93,16 @@
     <a href="updates.html" class="updates-link">Progress Updates →</a>
     <br> -->
 
-    <footer>
-        <!-- <p>Here is our secret <a href="plan.html">master plan</a></p> -->
-        <p><a href="https://www.syncereai.com">Business Site</a></p>
-        <p>Palo Alto, CA, USA</p>
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Designed in Palo Alto, CA, USA</p>
+            <!-- <p style="text-align: left;"><a href="https://www.syncereai.com">Business Site</a></p> -->
+
+        </div>
+        <div class="footer-right">
+            <p><i>Updated: April 2025</i></p>
+        </div>
     </footer>
+
 </body>
 </html>
