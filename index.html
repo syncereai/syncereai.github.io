@@ -24,8 +24,70 @@
         }
 
         body {
-            background-color: var(--background-color);
-            color: var(--text-color);
+            background-color: var(--background-color) !important;
+            color: var(--text-color) !important;
+            background-image: url('./Files/bnb.jpg') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-attachment: fixed !important;
+            position: relative !important;
+            min-height: 100vh !important;
+        }
+
+        /* Add a semi-transparent overlay for better text readability */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+
+        /* Dark mode overlay */
+        @media (prefers-color-scheme: dark) {
+            body::before {
+                background-color: rgba(26, 26, 26, 0.85);
+            }
+        }
+
+        /* Add noise effect using CSS */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(0,0,0,0.02) 1px, transparent 1px),
+                radial-gradient(circle at 75% 75%, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Dark mode noise */
+        @media (prefers-color-scheme: dark) {
+            body::after {
+                background-image: 
+                    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.02) 1px, transparent 1px),
+                    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 1px, transparent 1px);
+            }
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll; /* Better performance on mobile */
+            }
+            
+            body::after {
+                background-size: 30px 30px; /* Smaller noise pattern on mobile */
+            }
         }
 
         a {
@@ -101,7 +163,7 @@
 
     <footer class="footer">
         <div class="footer-left">
-            <p><i>Launching June 20th, 2025. Pre-seed soon.</i></p>
+            <p><i>Launching June 27th, 2025. Pre-seed soon.</i></p>
             <p>Designed in San Francisco, California</p>
             <!-- <p>© 2025 Syncere</p> -->
 
