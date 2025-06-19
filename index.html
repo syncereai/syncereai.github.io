@@ -29,6 +29,10 @@
             max-width: none !important;
             margin: 0 !important;
             padding: 0 !important;
+            /* Prevent text scaling on mobile */
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
         }
 
         a {
@@ -71,6 +75,41 @@
             text-align: left;
             padding: 2rem;
         }
+
+        /* Mobile landscape specific styles */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            body {
+                font-size: 14px !important;
+            }
+            
+            h1 {
+                font-size: 1.5em !important;
+            }
+            
+            h2 {
+                font-size: 0.8em !important;
+            }
+            
+            p {
+                font-size: 14px !important;
+                line-height: 1.4 !important;
+            }
+        }
+
+        /* General mobile responsive text sizing */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,7 +122,7 @@
                 <!-- <h2>Our Mission</h2> -->
                 
                 <p style="color: black;">
-                    <h1 style="font-weight: bold; font-size: 2em; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">SYNCERE</h1><h2 style="font-weight: bold; font-size: 1em; font-family: 'Montserrat', sans-serif; margin-top: 0; font-style: italic;">Ambient robotics, made for home.</h2>
+                    <h1 style="font-weight: bold; font-size: 2em; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">SYNCERE</h1><h2 style="font-weight: bold; font-size: 1em; font-family: 'Arial', sans-serif; margin-top: 0; font-style: italic;">Ambient robotics, made for home.</h2>
                 
                     At Syncere, we believe the future of domestic robotics is ambient.
                     <br>
@@ -125,7 +164,9 @@
                     <div style="text-align: right; color: black;">
                         Designed in San Francisco, California.
                         <br>
-                        Launching June 27th, 2025. Pre-seed soon.
+                        Launching June 27th, 2025. 
+                        <br>
+                        Pre-seed soon.
                     </div>
                 </p>
             </section>
