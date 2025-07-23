@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Syncere - Ambient Robotics</title>
+    <meta name="description" content="Syncere is building robot furniture that does your chores."/>
+    <meta property="og:title" content="Syncere - Ambient Robotics"/>
+    <meta property="og:description" content="Syncere is building robot furniture that does your chores."/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="color-scheme" content="light dark">
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #1a1a1a;
+                --text-color: #ffffff;
+            }
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            /* Prevent text scaling on mobile */
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        a {
+            color: var(--text-color);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            text-align: left;
+        }
+
+        main section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: left;
+            padding: 2rem;
+        }
+
+        /* Mobile landscape specific styles */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            /* Removed text sizing rules to keep consistent text sizes */
+        }
+
+        /* General mobile responsive text sizing */
+        @media screen and (max-width: 768px) {
+            /* Removed text sizing rules to keep consistent text sizes */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <main style="position: relative; background-image: url('Files/bnb.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; width: 100%; margin: 0; padding: 0;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.9);"></div>
+        <div style="position: relative; z-index: 1; padding: 2rem; color: black;">
+            <section>
+                <!-- <h2>Our Mission</h2> -->
+                
+                <p style="color: black;">
+                    <h1 style="font-weight: bold; font-size: 2em; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">SYNCERE</h1><h2 style="font-weight: bold; font-size: 1em; font-family: 'Arial', sans-serif; margin-top: 0; font-style: italic;">Ambient robotics, made for home.</h2>
+                
+                    At Syncere, we believe the future of domestic robotics is ambient.
+                    <br>
+                    <br>
+                    Robots should serve quietly by being <i>almost</i> invisible in the background without disrupting the feeling of home.
+                    <br>
+                    <br>
+                    While some are building humanoids/general-purpose robots for the home, we think that only works in structured, industrial settings, where environments are predictable and safety isn’t a concern.
+                    <br>
+                    <br>
+                    But homes are different. They are personal and unstructured.
+                    Bringing robots into them requires a new kind of thinking and design.
+                    <br>
+                    <br>
+                    A design so familiar, it feels as though it's always belonged. Quietly complementing the things you already love at home.
+                    <!-- Our goal is to automate your chores without adding humanoids to your home, because we believe your home should be for your family - <i>not shared with robot roommates.</i> -->
+                    <br>
+                    <br>
+                    We're in the early stages of building this future. Our team includes PhDs and engineers from Stanford, UToronto, Waterloo, Tesla, Figure, and more. 
+                    <br>
+                    <br>
+                    If you're an investor, you can view our progress, first product and deck <a href="https://forms.gle/tg8t9XNASMBbJsYU6" style="color: blue; text-decoration: underline;">here</a>.
+                    <br>
+                    <br>
+                    To get in touch, email us at <a href="mailto:hello@syncereai.com" style="color: blue; text-decoration: underline;">hello@syncereai.com</a> or book a call <a href="https://calendly.com/aaron-stanford/lets-chat" style="color: blue; text-decoration: underline;">here</a>.
+                    <!-- <ul>
+                        <li><a href="plan.html">why we are starting in hotels</a>,</li>
+                        <li><a href="problem.html">how we will create value for our customers</a>, and</li>
+                        <li><a href="updates.html">what our progress is so far</a>.</li>
+                    </ul> -->
+                     <br>
+                    <br>
+                    Thank you.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="text-align: right; color: black;">
+                        Designed in a Garage in San Francisco.
+                    </div>
+                </p>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
